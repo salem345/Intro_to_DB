@@ -14,15 +14,15 @@ publication_date date);
 
 CREATE TABLE Customers(
 customer_id int primary key,
-customer_name varchar(215),
-email varchar(215),
-address text);
+customer_name VARCHAR(215),
+ email VARCHAR(215),
+ address TEXT);
 
 CREATE TABLE Orders(
 customer_id int,
 orders_id int,
 foreign key (customer_id) references Customers (customer_id),
-order_date Date);
+order_date DATE);
 
 CREATE TABLE order_detail(
 book_id int,
@@ -30,4 +30,4 @@ orders_id int,
 order_detail_id int primary key,
 foreign key (orders_id) references Orders(orders_id),
 foreign key (book_id) references Books(book_id),
-quantity double);
+quantity DOUBLE);
