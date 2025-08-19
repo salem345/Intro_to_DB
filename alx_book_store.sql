@@ -19,9 +19,9 @@ customer_name VARCHAR(215),
  address TEXT);
 
 CREATE TABLE Orders(
-customer_id int,
+customer_id INT,
 orders_id int,
-foreign key (customer_id) references Customers (customer_id),
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE);
 
 CREATE TABLE order_detail(
