@@ -24,7 +24,7 @@ order_id INT,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE);
 
-CREATE TABLE Order_Detail(
+CREATE TABLE Order_Details(
 book_id INT,
 orders_id INT,
 order_detail_id int primary key,
