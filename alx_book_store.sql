@@ -24,10 +24,10 @@ order_id INT,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE);
 
-CREATE TABLE order_detail(
-book_id int,
-orders_id int,
+CREATE TABLE Order_Detail(
+book_id INT,
+orders_id INT,
 order_detail_id int primary key,
-foreign key (orders_id) references Orders(orders_id),
-foreign key (book_id) references Books(book_id),
+FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+FOREIGN KEY (book_id) REFERENCES Books(book_id),
 quantity DOUBLE);
