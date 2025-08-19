@@ -20,7 +20,7 @@ customer_name VARCHAR(215),
 
 CREATE TABLE Orders(
 customer_id INT,
-orders_id int,
+order_id INT,
 FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE);
 
